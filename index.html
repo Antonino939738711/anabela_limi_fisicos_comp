@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limites Físicos da Computação</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- MathJax -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-gradient-to-r from-indigo-700 to-purple-700 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-10">
+      <h1 class="text-3xl md:text-4xl font-bold">
+        Limites Físicos da Computação
+      </h1>
+      <p class="mt-3 max-w-3xl text-indigo-100">
+        Uma análise científica sobre até onde a computação pode ir,
+        considerando as leis fundamentais da Física.
+      </p>
+    </div>
+  </header>
+
+  <!-- AUTORA -->
+  <section class="max-w-7xl mx-auto px-4 -mt-10">
+    <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col sm:flex-row items-center gap-6">
+      <img
+        src="anabela.png"
+        alt="Anabela T.N Faustino"
+        class="w-28 h-28 rounded-full object-cover border-4 border-indigo-600"
+      >
+      <div>
+        <h2 class="text-xl font-bold">Anabela T.N Faustino</h2>
+        <p class="text-sm text-gray-600">
+          Pesquisadora — Ciência da Computação
+        </p>
+        <p class="mt-2 text-sm text-gray-700 max-w-2xl">
+          Este trabalho aborda os limites impostos pelas leis físicas
+          à computação moderna, analisando aspectos energéticos,
+          térmicos, quânticos e estruturais.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTEÚDO -->
+  <main class="max-w-7xl mx-auto px-4 py-12">
+
+    <!-- GRID PRINCIPAL -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+      <!-- VELOCIDADE -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-xl font-semibold mb-2">🚀 Limite de Velocidade</h3>
+        <p class="text-sm text-gray-600 mb-3">
+          A relatividade especial impõe um limite máximo à transmissão
+          de informação.
+        </p>
+        <div class="bg-gray-50 rounded-xl p-4 text-center text-sm">
+          \( v \leq c \approx 3 \times 10^8 \, m/s \)
+        </div>
+        <p class="mt-3 text-sm">
+          Isso limita o tamanho físico de chips e sistemas distribuídos.
+        </p>
+      </div>
+
+      <!-- TÉRMICO -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-xl font-semibold mb-2">🔥 Limite Térmico</h3>
+        <p class="text-sm text-gray-600 mb-3">
+          Computadores dissipam energia sob forma de calor.
+        </p>
+        <div class="bg-gray-50 rounded-xl p-4 text-center text-sm">
+          \( P = C \cdot V^2 \cdot f \)
+        </div>
+        <p class="mt-3 text-sm">
+          Onde aumentar frequência ou tensão aumenta drasticamente
+          o consumo.
+        </p>
+      </div>
+
+      <!-- LANDauer -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-xl font-semibold mb-2">🔋 Princípio de Landauer</h3>
+        <p class="text-sm text-gray-600 mb-3">
+          Existe um limite mínimo de energia para apagar um bit.
+        </p>
+        <div class="bg-gray-50 rounded-xl p-4 text-center text-sm">
+          \( E \ge kT \ln(2) \)
+        </div>
+        <p class="mt-3 text-sm">
+          Mesmo um computador ideal consome energia inevitavelmente.
+        </p>
+      </div>
+
+      <!-- MINIATURIZAÇÃO -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-xl font-semibold mb-2">⚛️ Limite de Miniaturização</h3>
+        <p class="text-sm text-gray-600 mb-3">
+          Transistores estão próximos da escala atômica.
+        </p>
+        <div class="bg-gray-50 rounded-xl p-4 text-center text-sm">
+          Tunelamento quântico → erros elétricos
+        </div>
+        <p class="mt-3 text-sm">
+          A Lei de Moore perdeu validade prática.
+        </p>
+      </div>
+
+      <!-- QUÂNTICO -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-xl font-semibold mb-2">🧠 Limite Quântico</h3>
+        <p class="text-sm text-gray-600 mb-3">
+          Estados quânticos são sensíveis ao ambiente.
+        </p>
+        <div class="bg-gray-50 rounded-xl p-4 text-center text-sm">
+          Decoerência → perda de informação
+        </div>
+        <p class="mt-3 text-sm">
+          Computação quântica é especializada, não universal.
+        </p>
+      </div>
+
+      <!-- ARMAZENAMENTO -->
+      <div class="bg-white rounded-2xl shadow-md p-6">
+        <h3 class="text-xl font-semibold mb-2">📦 Limite de Armazenamento</h3>
+        <p class="text-sm text-gray-600 mb-3">
+          Informação precisa de suporte físico.
+        </p>
+        <div class="bg-gray-50 rounded-xl p-4 text-center text-sm">
+          \( I \le \frac{E}{kT \ln(2)} \)
+        </div>
+        <p class="mt-3 text-sm">
+          A densidade de dados tem limite físico.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- SEÇÃO EXTRA -->
+    <section class="mt-10 bg-white rounded-2xl shadow-md p-6">
+      <h2 class="text-2xl font-bold mb-4">Implicações para o Futuro</h2>
+      <ul class="list-disc list-inside text-sm text-gray-700 space-y-2">
+        <li>Fim do aumento agressivo de frequência</li>
+        <li>Uso intensivo de paralelismo</li>
+        <li>Arquiteturas especializadas (GPU, TPU)</li>
+        <li>Algoritmos mais eficientes que hardware mais rápido</li>
+      </ul>
+    </section>
+
+    <!-- CONCLUSÃO -->
+    <section class="mt-6 bg-indigo-600 text-white rounded-2xl p-6">
+      <h2 class="text-2xl font-bold mb-3">Conclusão</h2>
+      <p class="text-sm leading-relaxed">
+        A computação é limitada pela realidade física.
+        Não é uma questão de tecnologia, mas de leis fundamentais.
+        O avanço futuro depende mais de inteligência algorítmica
+        do que de força bruta computacional.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-sm text-gray-500 py-6">
+    © 2026 — Trabalho Académico | Anabela T.N Faustino
+  </footer>
+
+</body>
+</html>
